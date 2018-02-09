@@ -1,4 +1,35 @@
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
+%div#top
+  %h1.brand Holger Tidemand
+  .wrapper
+    .title
+      .trans
+        %h3 Holger Tidemand
+    .about-me#about-me
+      .story
+        %strong My name is Holger Tidemand and i have two passions in life, sailing and web development.
+        %p
+          It used to be just sailing.
+          But when I turned in to a professional sailor I realized that there is no limit to how much time I could put in to it.
+          Some might say that is the dream, to be able to do what you love all the time.
+          I got consumed with my passion and spent 280+ traveling every year. this was untill i relized it was to much.
+          A balance was missing, and then I found coding.
+        %strong Today I'm a remote working programmer who found a balance between two passion.
+      .approach-me
+        %strong How to approach me!
+        %p
+          Tell me about the best thing that happend to you today (Big or Small)
+          or ask for advice about the problems you have, eg. what brand of loudspeaker to buy and pros and cons for your options.
+        %strong I love talking about that stuff.
+
+    .projects#projects
+      - data.projects.each do |project|
+        .mitten.card.mt-4(style="width: 17em;")
+          %img.card-img-top.size-img{src: project[:image]}
+          %div.body-card
+            %h4.card-title.mt-4= project[:name]
+            %p.card-text= project[:description]
+            %a.btn.btn-primary.mb-4{href: project[:url]} Click Here.
+    .skills
+      - data.icons.each do |icon|
+        %div
+          %i.icons{class: icon[:id], style: icon[:style], title: icon[:name]}

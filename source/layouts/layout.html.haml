@@ -6,9 +6,12 @@
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
     / Use the title from a page's frontmatter if it has one
-    %title= current_page.data.title || "Middleman"
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css", :rel => "stylesheet"}
+    %title= current_page.data.title || "ShowTime"
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
   %body
+    = partial 'partials/navbar'
     = yield
     = partial 'partials/footer'

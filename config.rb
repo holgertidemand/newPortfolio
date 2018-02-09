@@ -1,11 +1,22 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+require 'extensions/build_cleaner'
+
+configure :build do
+  activate :relative_assets
+  activate :build_cleaner
+end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
 activate :livereload
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

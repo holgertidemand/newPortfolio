@@ -1,5 +1,29 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
-
 - name: FizzBuzz
-  description: My first Test driven ruby project
+  description: My First Test Driven Ruby Project
+  url: https://github.com/holgertidemand/Fizz_Buzz_Game
+  image: images/fizz_buzz.jpg
+
+- name: FizzBuzz in JavaScript
+  description: My First Website
+  url: https://holgertidemand.github.io/Fizz_Buzz_Game_Javascript/
+  image: images/fizz_buzz.jpg
+
+- name: BMI Challenge
+  description: BMI Calculator Application
+  url: https://holgertidemand.github.io/bmi-challenge2.0/
+  image: images/BMI2.0.jpg
+
+- name: ATM Challenge
+  description: Basic ATM Application
+  url: https://github.com/jyuw/atm_challenge
+  image: images/ATM.jpg
+
+- name: Libary Challenge
+  description: Basic Liberay Application
+  url: https://github.com/holgertidemand/library-challenge
+  image: images/bibban2.0.jpg
+
+- name: Cooper Test Template
+  description: Cooper Test Result Calculator.
+  url: https://github.com/OskarCA/cooper_weekend_challange
+  image: images/copper_test.jpg
