@@ -3,7 +3,7 @@
     .contacts
       %h3 Holger Oliwer Tidemand
       %ul
-        - data.cv.each do |name|
+        - data.contacts.each do |name|
           %li= name[:adress]
           %li= name[:email]
           %li= name[:phone]

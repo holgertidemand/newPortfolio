@@ -21,7 +21,8 @@
 }
 
 .profile-image {
-  justify-self: center;
+  padding-left: 100px;
+  width: 100%;
 
 }
 
@@ -45,4 +46,29 @@
   grid-area: awards;
   padding-left: 100px;
   width: 100%;
+}
+
+@media(max-width:720px){
+  .brand {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 25px;
+  }
+  .employment {
+    grid-area: employment;
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  .education {
+    grid-area: education;
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  .awards {
+    grid-area: awards;
+    padding-left: 25px;
+    width: 100%;
+  }
 }
