@@ -1,0 +1,48 @@
+#toppen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'brand' 'employment' 'education' 'awards';
+  grid-gap: 1em;
+  color: #fff;
+}
+
+.style {
+  font-style: Italic;
+}
+
+.brand {
+  display: grid;
+  grid-area: brand;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 150px;
+  padding-left: 80px;
+}
+
+.profile-image {
+  justify-self: center;
+
+}
+
+.contacts {
+  align-self: center;
+}
+
+.employment {
+  grid-area: employment;
+  padding-left: 100px;
+  width: 100%;
+}
+
+.education {
+  grid-area: education;
+  padding-left: 100px;
+  width: 100%;
+}
+
+.awards {
+  grid-area: awards;
+  padding-left: 100px;
+  width: 100%;
+}

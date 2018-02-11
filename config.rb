@@ -5,6 +5,8 @@ require 'extensions/build_cleaner'
 configure :build do
   activate :relative_assets
   activate :build_cleaner
+  activate :minify_css
+  activate :minify_javascript
 end
 
 activate :autoprefixer do |prefix|
@@ -17,6 +19,10 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+#activate :minify_html
+
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

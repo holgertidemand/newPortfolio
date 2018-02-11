@@ -1,0 +1,29 @@
+%div#toppen
+  .brand
+    .contacts
+      %h3 Holger Oliwer Tidemand
+      %ul
+        - data.cv.each do |name|
+          %li= name[:adress]
+          %li= name[:email]
+          %li= name[:phone]
+    .profile-image
+      %img(src="images/profile_images.jpg" alt="Photo of Holger Tidemand" style="width: 400px; height: 350px; border-radius: 15px;")
+  .employment
+    %h4 Employment
+    %ul
+      - data.employment.each do |job|
+        %li= job[:employment]
+        %p.style= job[:description]
+  .education
+    %h4 Education
+    %ul
+      - data.education.each do |school|
+        %li= school[:education]
+        %p.style= school[:description]
+  .awards
+    %h4 Result & Awards
+    %ul
+      - data.awards.each do |award|
+        %li= award[:award]
+        %p.style= award[:description]
